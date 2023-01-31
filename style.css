@@ -2,10 +2,10 @@
 /*General*/
 
 :root {
-    Very-Dark-Magenta: hsl(300, 43%, 22%);
+    Very-Dark-Magenta: rgb(80, 32, 80);
     Soft-Pink: hsl(333, 80%, 67%);
     Dark-Grayish-Magenta: hsl(303, 10%, 53%);
-    Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    Light-Grayish-Magenta: rgb(247, 242, 247);
     Just-White: hsl(0, 0%, 100%);
 
 }
@@ -19,3 +19,86 @@
 html {
     font-size: 62.5%;
 }
+
+#container_1{
+    display: flex;
+    margin:  30px 60px;
+
+}
+
+
+
+/* ESTILOS CONTENEDOR 1 */
+
+#container_1_left{
+    margin: 60px auto;
+    font-family: 'Oswald', sans-serif;
+    translate: 20%;
+    font-size: 15px;
+    color: #502050;
+}
+
+#container_1_left h1{
+    width: 40%;
+    margin: 20px;
+    font-size: 40px;
+}
+#container_1_left p{
+    width: 40%;
+    margin: 20px;
+    font-weight: 400;
+   
+}
+
+
+
+#container_1_right{
+    font-family: 'Oswald', sans-serif;
+    translate: -30%;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.rated{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    font-size: 15px;
+    border-radius: 5px;
+    color: #502050;
+    background-color: #f7f2f7;
+    
+}
+.rated i{
+    margin: 5px;
+}
+.rated span{
+    margin: 10px;
+    font-weight: 700;
+}
+.rated div{
+    margin: 5px;
+}
+
+
+.fa-solid{
+    color: orange;
+    
+
+}
+
+.rated.uno{
+    translate: -50%;
+ 
+}
+
+.rated.dos{
+    translate: -40%;
+}
+
+.rated.tres{
+    translate: -30%;
+}
+
+/* FIN ESTILOS CONTENEDOR 1 */
