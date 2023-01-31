@@ -2,11 +2,12 @@
 /*General*/
 
 :root {
-    Very-Dark-Magenta: rgb(80, 32, 80);
-    Soft-Pink: hsl(333, 80%, 67%);
-    Dark-Grayish-Magenta: hsl(303, 10%, 53%);
-    Light-Grayish-Magenta: rgb(247, 242, 247);
-    Just-White: hsl(0, 0%, 100%);
+
+    --very-Dark-Magenta: rgb(80, 32, 80);
+    --soft-Pink: hsl(333, 80%, 67%);
+    --dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --light-Grayish-Magenta: rgb(247, 242, 247);
+    --just-White: hsl(0, 0%, 100%);
 
 }
 
@@ -18,6 +19,10 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'League Spartan';
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
 }
 
 #container_1{
@@ -31,10 +36,9 @@ html {
 /* ESTILOS CONTENEDOR 1 */
 
 #container_1_left{
-    margin: 60px auto;
-    font-family: 'Oswald', sans-serif;
+    margin: 60px auto; 
     translate: 20%;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #502050;
 }
 
@@ -47,13 +51,13 @@ html {
     width: 40%;
     margin: 20px;
     font-weight: 400;
+    line-height: 1.9rem;
    
 }
 
 
 
 #container_1_right{
-    font-family: 'Oswald', sans-serif;
     translate: -30%;
     margin: 80px auto;
     display: flex;
@@ -102,3 +106,88 @@ html {
 }
 
 /* FIN ESTILOS CONTENEDOR 1 */
+
+/* container_2 styles */
+
+#container_2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 940px;
+    height: auto;
+    
+}
+
+.container_2_review {
+    width: 35%;
+    min-width: 250px;
+    padding: 25px;
+    height: auto;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--just-White);
+    border-radius: 8px;
+    background-color: var(--very-Dark-Magenta);
+}
+
+.reviewer-name {
+    font-weight: bold;
+}
+
+.verified-tag {
+    color: var(--soft-Pink);
+}
+
+.first-section-container {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.colton {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    margin: 0 10px 10px 0px;
+    border-radius: 100%;
+    background-image: url(./images/image-colton.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.irene {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    margin: 0 10px 10px 0px;
+    border-radius: 100%;
+    background-image: url(./images/image-irene.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.anne {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    margin: 0 10px 10px 0px;
+    border-radius: 100%;
+    background-image: url(./images/image-anne.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.credits {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 1.3rem;
+}
+
+
+
